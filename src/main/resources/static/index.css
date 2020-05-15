@@ -1,0 +1,14 @@
+.cell {
+    width: 15px;
+    text-align: center;
+}
+.column {
+    width: 18px;
+    display: inline-block;
+}
+#indent {
+    margin-left: 18px;
+}
+.skip {
+    margin-left: 15px;
+}

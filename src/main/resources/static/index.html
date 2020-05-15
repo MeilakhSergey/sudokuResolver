@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sudoku Resolver</title>
+
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>Sudoku</h1>
+<form>
+    <label id="indent" class="indent column">1</label><label class="column">2</label><label class="column">3</label><label class="column skip">4</label><label class="column">5</label><label class="column">6</label><label class="column skip">7</label><label class="column">8</label><label class="column">9</label><br>
+    <label>1 </label><input class="cell"><input class="cell"><input class="cell"> | <input class="cell"><input class="cell"><input class="cell"> | <input class="cell"><input class="cell"><input class="cell"><br>
+    <label>2 </label><input class="cell"><input class="cell"><input class="cell"> | <input class="cell"><input class="cell"><input class="cell"> | <input class="cell"><input class="cell"><input class="cell"><br>
+    <label>3 </label><input class="cell"><input class="cell"><input class="cell"> | <input class="cell"><input class="cell"><input class="cell"> | <input class="cell"><input class="cell"><input class="cell"><br>
+    <br>
+    <label>4 </label><input class="cell"><input class="cell"><input class="cell"> | <input class="cell"><input class="cell"><input class="cell"> | <input class="cell"><input class="cell"><input class="cell"><br>
+    <label>5 </label><input class="cell"><input class="cell"><input class="cell"> | <input class="cell"><input class="cell"><input class="cell"> | <input class="cell"><input class="cell"><input class="cell"><br>
+    <label>6 </label><input class="cell"><input class="cell"><input class="cell"> | <input class="cell"><input class="cell"><input class="cell"> | <input class="cell"><input class="cell"><input class="cell"><br>
+    <br>
+    <label>7 </label><input class="cell"><input class="cell"><input class="cell"> | <input class="cell"><input class="cell"><input class="cell"> | <input class="cell"><input class="cell"><input class="cell"><br>
+    <label>8 </label><input class="cell"><input class="cell"><input class="cell"> | <input class="cell"><input class="cell"><input class="cell"> | <input class="cell"><input class="cell"><input class="cell"><br>
+    <label>9 </label><input class="cell"><input class="cell"><input class="cell"> | <input class="cell"><input class="cell"><input class="cell"> | <input class="cell"><input class="cell"><input class="cell"><br>
+</form>
+</br>
+<div id="actions">
+    <button id="nextStep" onclick="getNextStep()">Next Step</button>
+    <p id="nextStepResult"></p>
+    <button id="isValid" onclick="isValid()">Valid sudoku?</button>
+    <p id="isValidResult"></p>
+</div>
+</body>
+</html>
