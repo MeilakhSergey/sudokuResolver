@@ -1,3 +1,4 @@
+const url = "http://sudokuresolver-env.eba-iagrn2x2.us-east-2.elasticbeanstalk.com";
 function getSudoku() {
     var sudoku = "rows=";
     var item = 0;
@@ -23,7 +24,7 @@ function getNextStep() {
         type: "GET",
         contentType : "application/json",
         data: sudoku,
-        url: "http://localhost:8080/board/next-step",
+        url: url + "/board/next-step",
         success: function(data) {
             if (data !== "") {
                 $("#nextStepResult").text(`Number ${data.digit} at position (${data.i+1};${data.j+1})`);
@@ -43,7 +44,7 @@ function isValid() {
         type: "GET",
         contentType : "application/json",
         data: sudoku,
-        url: "http://localhost:8080/board/valid",
+        url: url + "/board/valid",
         success: function(data) {
             $("#isValidResult").text(data.toString());
         },
